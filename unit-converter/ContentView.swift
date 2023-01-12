@@ -26,7 +26,7 @@ struct ContentView: View {
     var convertedValue: String {
         switch initialUnit {
         case .meters:
-            return convertMiles(initialValue, to: convertedUnit)
+            return convertMeters(initialValue, to: convertedUnit)
         case .kilometers:
             return convertKilometers(initialValue, to: convertedUnit)
         case .feet:
